@@ -5,7 +5,7 @@
     // Однако это не означает, что теперь вовсе нельзя использовать any.
     // Это означает лишь, что в подобных ситуация разработчик должен явно писать any,
     "noImplicitAny": true,
-    "module": "es6",
+    "module": "esnext",
     // В какую спецификацию компилируем: для поддержки большинства браузеров
     "target": "es5",
     "jsx": "react-jsx",
@@ -30,6 +30,7 @@
     "allowSyntheticDefaultImports": true,
     "plugins": [{"name": "typescript-plugin-css-modules"}]
   },
+  "exclude": ["node_modules", ".next"],
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS"
