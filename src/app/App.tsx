@@ -9,6 +9,8 @@ import { Main } from "pages/Main";
 import { AppRouter } from "./providers/router";
 import { Navbar } from "widgets/Navbar";
 import { Sidebar } from "widgets/Sidebar";
+import { useTranslation } from "react-i18next";
+import { LangSwitcher } from "widgets/LangSwitcher";
 
 export const App = () => {
   const { theme } = useTheme();
@@ -17,11 +19,14 @@ export const App = () => {
     <div
       className={classNames("app", { hovered: true, selected: true }, [theme])}
     >
-      <Navbar />
-      <div className="content-page">
-        <Sidebar />
-        <AppRouter />
-      </div>
+      <Suspense fallback="">
+        <Navbar />
+        {/* <LangSwitcher /> */}
+        <div className="content-page">
+          <Sidebar />
+          <AppRouter />
+        </div>
+      </Suspense>
     </div>
   );
 };
