@@ -8,6 +8,7 @@ import { About } from "pages/About";
 import { Main } from "pages/Main";
 import { AppRouter } from "./providers/router";
 import { Navbar } from "widgets/Navbar";
+import { Sidebar } from "widgets/Sidebar";
 
 export const App = () => {
   const { theme } = useTheme();
@@ -17,7 +18,10 @@ export const App = () => {
       className={classNames("app", { hovered: true, selected: true }, [theme])}
     >
       <Navbar />
-      <AppRouter />
+      <div className="content-page">
+        <Sidebar />
+        <AppRouter />
+      </div>
     </div>
   );
 };
