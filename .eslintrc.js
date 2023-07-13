@@ -12,7 +12,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'json-format'],
+  plugins: ['react', '@typescript-eslint'],
   rules: {
     'react/jsx-indent': [2, 2],
     'react/jsx-indent-props': [2, 2],
@@ -32,7 +32,7 @@ module.exports = {
     'import/extensions': 'off',
     'import/no-extraneous-dependencies': 'off',
     'no-underscore-dangle': 'off',
-    "linebreak-style": 'lf'
+    'linebreak-style': [0, 'lf'],
   },
   globals: {
     __IS_DEV__: true,

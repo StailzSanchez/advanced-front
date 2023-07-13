@@ -7,6 +7,21 @@
   "i18n-ally.displayLanguage": "ru",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-},
-  "eslint.validate": ["javascript"]
+  },
+  "stylelint.config": {
+    "rules": {
+        "at-rule-name-case": "lower",
+        "at-rule-name-space-after": "always-single-line",
+        "at-rule-semicolon-newline-after": "always",
+    }
+  },
+  "editor.codeActionsOnSave": {
+    "file.fixAll.eslint": true,
+    "file.fixAll.stylelint": true
+  },
+  "eslint.validate": ["javascript"],
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  // "editor.formatOnSave": false,
 }
