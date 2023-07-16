@@ -38,7 +38,8 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'no-underscore-dangle': 'off',
     'linebreak-style': [0, 'lf'],
-    'max-len': ['error', { ignoreComments: true }],
+    'max-len': ['warn', { code: 100, ignoreComments: true }],
+    'operator-linebreak': ['error', 'before'],
     // 'i18next/no-literal-string': ['error', { markupOnly: true }],
   },
   globals: {
