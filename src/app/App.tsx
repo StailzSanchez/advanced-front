@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import './styles/index.scss';
 
 import { classNames } from 'shared/lib/classNames';
@@ -16,7 +16,6 @@ export const App = () => {
     >
       <Suspense fallback="">
         <Navbar />
-        {/* <LangSwitcher /> */}
         <div className="content-page">
           <Sidebar />
           <AppRouter />
