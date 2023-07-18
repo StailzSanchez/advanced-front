@@ -25,7 +25,7 @@ export default {
   ],
   modulePaths: ['<rootDir>src'],
   rootDir: '../../',
-  setupFilesAfterEnv: ['<rootDir>/config/setupTests.ts'],
+  setupFilesAfterEnv: ['<rootDir>config/jest/setupTests.ts'],
   // Indicates whether the coverage information should be collected while executing the test
   // collectCoverage: false,
 
