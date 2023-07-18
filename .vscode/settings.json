@@ -23,5 +23,10 @@
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
+  "i18n-ally.extract.ignoredByFiles": {
+    ".eslintrc.js": [
+      "**/src/**/*.test.{ts, tsx}"
+    ]
+  },
   // "editor.formatOnSave": false,
 }

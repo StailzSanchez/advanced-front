@@ -20,7 +20,12 @@
   "exclude": ["node_modules", ".next"],
   "ts-node": {
     "compilerOptions": {
-      "module": "CommonJS"
+      "module": "CommonJS",
+      "jsx":"react",
+      "strict": true,
+      "paths": {
+        "react": [ "./node_modules/@types/react" ]
+      }
     }
   },
     "include": [
