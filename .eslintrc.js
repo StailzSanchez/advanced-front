@@ -2,30 +2,25 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    jest: true,
+    jest: true
   },
-  extends: [
-    'plugin:react/recommended',
-    'airbnb',
-    // 'plugin:i18next/recommended',
-  ],
+  extends: ['plugin:react/recommended', 'airbnb', 'plugin:storybook/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
     ecmaVersion: 'latest',
-    sourceType: 'module',
+    sourceType: 'module'
   },
   plugins: ['react', '@typescript-eslint'],
   rules: {
     'react/jsx-indent': [2, 2],
     'react/jsx-indent-props': [2, 2],
     indent: [2, 2],
-    'react/jsx-filename-extension': [
-      2,
-      { extensions: ['.js', '.jsx', '.tsx', '.json'] },
-    ],
+    'react/jsx-filename-extension': [2, {
+      extensions: ['.js', '.jsx', '.tsx', '.json']
+    }],
     'import/no-unresolved': 'off',
     'import/prefer-default-export': 'off',
     'no-unused-vars': 'warn',
@@ -38,8 +33,11 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'no-underscore-dangle': 'off',
     'linebreak-style': [0, 'lf'],
-    'max-len': ['warn', { code: 110, ignoreComments: true }],
-    'operator-linebreak': ['error', 'before'],
+    'max-len': ['warn', {
+      code: 110,
+      ignoreComments: true
+    }],
+    'operator-linebreak': ['error', 'before']
     // 'i18next/no-literal-string': [
     //   'error',
     //   {
@@ -48,13 +46,14 @@ module.exports = {
     //   },
     // ],
   },
+
   globals: {
-    __IS_DEV__: true,
+    __IS_DEV__: true
   },
-  overrides: [
-    {
-      files: ['**/src/**/*.test.{ts, tsx}'],
-      rules: { 'i18next/no-literal-string': 'off' },
-    },
-  ],
+  overrides: [{
+    files: ['**/src/**/*.test.{ts, tsx}'],
+    rules: {
+      'i18next/no-literal-string': 'off'
+    }
+  }]
 };
