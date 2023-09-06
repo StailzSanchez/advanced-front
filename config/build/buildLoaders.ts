@@ -1,4 +1,3 @@
-import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import { buildCssLoader } from './loaders/buildCssLoaders';
 import { BuildOptions } from './types/config';
 

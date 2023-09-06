@@ -1,19 +1,14 @@
-@import 'app/styles/index.scss';
-
+@import "app/styles/index";
 
 .button {
   cursor: pointer;
-  color: var(--primary-color)
+  color: var(--primary-color);
 }
 
-
-
 .clear {
-
   border: none;
   background: none;
   outline: none;
-
 }
 
 .outline {
