@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Button } from 'shared/ui/Button';
 
-// Компонент для тестирования
+// Компонент тестирования
 export const BugButton = () => {
   const { t } = useTranslation();
   const [error, setError] = useState(false);
