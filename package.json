@@ -7,6 +7,7 @@
     "test:unit": "npx jest --config ./config/jest/jest.config.ts",
     "test:ui": "npx loki test",
     "test:ui:ok": "npx loki approve",
+    "test:ui:ci": "npx && loki --requireReference --reactUri file:./storybook-static",
     "start": "npx webpack serve --env port=3000",
     "build:prod": "npx webpack --env mode=production",
     "build:dev": "npx webpack --env mode=development",
