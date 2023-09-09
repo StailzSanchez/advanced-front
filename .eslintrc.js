@@ -32,6 +32,7 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'no-underscore-dangle': 'off',
     'linebreak-style': [0, 'lf'],
+    'wrap-iife': 'any',
     // 'object-curly-newline': ['error', 'consistent'],
     'max-len': ['warn', { code: 110, ignoreComments: true }],
     'operator-linebreak': ['error', 'before'],
