@@ -7,7 +7,7 @@
     "test:unit": "npx jest --config ./config/jest/jest.config.ts",
     "test:ui": "npx loki test",
     "test:ui:ok": "npx loki approve",
-    "test:ui:ci": "npx && loki --requireReference --reactUri file:./storybook-static",
+    "test:ui:ci": "npx loki --requireReference --reactUri file:./storybook-static",
     "start": "npx webpack serve --env port=3000",
     "build:prod": "npx webpack --env mode=production",
     "build:dev": "npx webpack --env mode=development",
@@ -67,6 +67,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.5.1",
     "jest-html-reporters": "^3.0.10",
+    "loki": "^0.32.0",
     "mini-css-extract-plugin": "^2.5.3",
     "react-refresh": "^0.12.0",
     "reg-cli": "^0.17.6",
@@ -98,12 +99,12 @@
   "loki": {
     "configurations": {
       "chrome.laptop": {
-        "target": "chrome.app",
+        "target": "chrome.docker",
         "width": 1366,
         "height": 768
       },
       "chrome.iphone7": {
-        "target": "chrome.app",
+        "target": "chrome.docker",
         "preset": "iPhone 7"
       }
     }
