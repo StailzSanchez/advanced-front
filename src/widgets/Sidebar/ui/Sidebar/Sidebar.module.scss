@@ -22,6 +22,10 @@
   position: absolute;
   right: -32px;
   bottom: 32px;
+  display: flex;
+  font-size: var(--font-size-xl);
+  align-items: center;
+  justify-content: center;
 }
 
 .items {
@@ -42,7 +46,7 @@
   opacity: 1;
 }
 
-.link + .link {
+.link+.link {
   margin-top: 10px;
 }
 

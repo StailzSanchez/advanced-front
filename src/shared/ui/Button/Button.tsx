@@ -23,7 +23,6 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export const Button: FC<ButtonProps> = (props) => {
-  // eslint-disable-next-line object-curly-newline
   const {
     className,
     children,

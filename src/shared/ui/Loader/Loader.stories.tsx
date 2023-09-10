@@ -13,20 +13,17 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {},
-  args: {}
+  args: {},
 } satisfies Meta<typeof Loader>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Normal: Story = {
-  args: {
-  },
+  args: {},
 };
 
 export const Dark: Story = {
-  args: {
-
-  },
+  args: {},
 };
-Dark.decorators = [ThemeDecorator(Theme.DARK)]
+Dark.decorators = [ThemeDecorator(Theme.DARK)];

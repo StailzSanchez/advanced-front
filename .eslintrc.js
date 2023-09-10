@@ -11,7 +11,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint'],
+  plugins: ['react', '@typescript-eslint', 'react-hooks'],
   rules: {
     'react/jsx-indent': [2, 2],
     'react/jsx-indent-props': [2, 2],
@@ -33,9 +33,13 @@ module.exports = {
     'no-underscore-dangle': 'off',
     'linebreak-style': [0, 'lf'],
     'wrap-iife': 'off',
-    // 'object-curly-newline': ['error', 'consistent'],
+    'object-curly-newline': 'off',
     'max-len': ['warn', { code: 110, ignoreComments: true }],
+    'jsx-a11y/click-events-have-key-events': 'off',
+    'jsx-a11y/no-static-element-interactions': 'off',
     'operator-linebreak': ['error', 'before'],
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'error',
     // 'i18next/no-literal-string': [
     //   'error',
     //   {
