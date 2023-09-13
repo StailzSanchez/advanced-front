@@ -12,8 +12,7 @@ const meta = {
     layout: 'fullscreen',
   },
   tags: ['autodocs'],
-  argTypes: {
-  },
+  argTypes: {},
 } satisfies Meta<typeof Navbar>;
 
 export default meta;
@@ -27,4 +26,4 @@ export const Dark: Story = {
   args: {},
 };
 
-Dark.decorators = [ThemeDecorator(Theme.DARK)]
+Dark.decorators = [ThemeDecorator(Theme.DARK)];
