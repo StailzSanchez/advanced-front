@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { UserSchema } from '../types/user';
 
 // export interface CounterState {
 //   value: number;
