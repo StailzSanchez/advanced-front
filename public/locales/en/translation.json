@@ -10,5 +10,8 @@
   "вызвать ошибку": "throw error",
   "Короткий язык": "En",
   "decrement": "decrement",
-  "increment": "increment"
+  "increment": "increment",
+  "Введите текст": "Input text",
+  "Введите username": "Input username",
+  "Введите пароль": "Input password"
 }

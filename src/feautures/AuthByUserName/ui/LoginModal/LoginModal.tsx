@@ -16,6 +16,7 @@ export const LoginModal = (props: LoginModalProps) => {
       isOpen={isOpen}
       onClose={onClose}
       className={classNames(cls.loginModal, {}, [className])}
+      lazy
     >
       <LoginForm />
     </Modal>
